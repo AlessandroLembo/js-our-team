@@ -21,6 +21,9 @@ Organizzare i singoli membri in card/schede e rendere la pagina
 gradevole (potete usare lo screen in allegato come spunto).
 */
 
+// Recupero gli elementi dalla pagina
+const infoMembers = document.getElementById('info-members');
+
 // Creare un array di oggetti con le informazioni fornite.
 const team = [
     { fullName: 'Wayne Barnett', role: 'Founder & CEO', picture: 'Wayne-Barnett-Founder-CEO.jpg' },
@@ -40,7 +43,22 @@ const team = [
 for (let i = 0; i < team.length; i++){
     currentMember = team[i];
     console.log(currentMember);
+
+    infoMembers.innerText += `Full-name: ${team[i].fullName}; 
+                              role: ${team[i].role};
+                              picture: ${team[i].picture};
+                              -------------------------
+                              `; 
+    
 }
+
+
+
+
+
+
+
+
 
 
 
