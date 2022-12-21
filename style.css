@@ -52,16 +52,16 @@
 }
 
 /* card, stile e allineamento */
-.row{
+#row{
     display: flex;
     justify-content: space-between;
-    padding: 2rem 0;
-    
+    flex-wrap: wrap;
 }
 
 .col{
     flex-basis: calc(100% / 3);
     min-height: 300px;
+    padding: 1rem;
     /* border: 1px dashed black; */
 
     display: flex;
@@ -72,10 +72,4 @@
     text-align: center;
     padding: 5px;
     color: rgba(0, 0, 0, 0.5);
-}
-
-.card{
-    border: 1px dashed red;
-    min-height: 200px;
-    flex-basis: 100%;
 }

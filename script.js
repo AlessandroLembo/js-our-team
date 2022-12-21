@@ -23,19 +23,11 @@ gradevole (potete usare lo screen in allegato come spunto).
 
 // Recupero gli elementi dalla pagina
 const infoMembers = document.getElementById('info-members');
-const cardsElements = document.querySelectorAll('.card');
-console.log(cardsElements);
+const topRow = document.getElementById('top-Row');
+const bottomRow = document.getElementById('bottom-Row');
+// const cardsElements = document.querySelectorAll('.card');
+// console.log(cardsElements);
 
-// Creazione array con indirizzo immagini
-const sources = [
-    'img/wayne-barnett-founder-ceo.jpg', 
-    'img/angela-caroll-chief-editor.jpg',  
-    'img/walter-gordon-office-manager-jpg',
-    'img/angela-lopez-social-media-manager.jpg',
-    'img/scott-estrada-developer.jpg',
-    'img/barbara-ramos-graphic-designer.jpg',
-      
- ];
 
 // Creare un array di oggetti con le informazioni fornite.
 const team = [
