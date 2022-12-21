@@ -41,12 +41,10 @@ for (let i = 0; i < team.length; i++){
     let currentMember = team[i];
     console.table(currentMember);
 
-    // infoMembers.innerText += `Full-name: ${team[i].fullName}; role: ${team[i].role}; picture: ${team[i].picture};
-    //                           -------------------------
-    //                           `; 
-
-    printElement += `Full-name: ${team[i].fullName}; role: ${team[i].role}; picture: ${team[i].picture};
-    -------------------------
+    printElement += `Full-name: ${team[i].fullName}; 
+                     role: ${team[i].role}; 
+                     picture: ${team[i].picture};
+                     -------------------------
     `;                           
 }
 
@@ -55,7 +53,7 @@ infoMembers.innerText = printElement;
 
 // Creazione array con indirizzo immagini
 const sources = [
-    'img/wayne-barnett-founder-ceo.jpg', 
+    'img/wayne-barnett-founder-ceo.jpg',  
     'img/angela-caroll-chief-editor.jpg',  
     'img/walter-gordon-office-manager.jpg',  
     'img/angela-lopez-social-media-manager.jpg',
@@ -64,12 +62,16 @@ const sources = [
       
  ];
 
+// Creazione delle cards 
 let cards = '';
 
 for (let i = 0; i < sources.length; i++){
    cards += `<div class="card">
                 <img src="${sources[i]}" alt="profile ${i}">
-                                   
+                <div>
+                   <h3 class="name">${team[i].fullName}</h3>
+                   <h5 class="role">${team[i].role}</h5>
+                </div>                     
              </div>` ;
 }
 
