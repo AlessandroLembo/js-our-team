@@ -23,14 +23,24 @@ gradevole (potete usare lo screen in allegato come spunto).
 
 // Creare un array di oggetti con le informazioni fornite.
 const team = [
-    { fullName: 'Wayne Barnett', role: 'Founder & CEO', picture: 'img' },
-    { fullName: 'Angela Caroll', role: 'Chief Editor', picture: 'img' },
-    { fullName: 'Walter Gordon', role: 'Office Manager', picture: 'img' },
-    { fullName: 'Angela Lopez', role: 'Social Media Manager', picture: 'img' },
-    { fullName: 'Scott Estrada', role: 'Developer', picture: 'img' },
-    { fullName: 'Barbara Ramos', role: 'Graphic Designer', picture: 'img' },
+    { fullName: 'Wayne Barnett', role: 'Founder & CEO', picture: 'Wayne-Barnett-Founder-CEO.jpg' },
+    { fullName: 'Angela Caroll', role: 'Chief Editor', picture: 'Angela-Caroll-Chief-Editor.jpg' },
+    { fullName: 'Walter Gordon', role: 'Office Manager', picture: 'Walter-Gordon-Office-Manager.jpg' },
+    { fullName: 'Angela Lopez', role: 'Social Media Manager', picture: 'Angela-Lopez-Social-Media-Manager.jpg' },
+    { fullName: 'Scott Estrada', role: 'Developer', picture: 'Scott-Estrada-Developer.jpg' },
+    { fullName: 'Barbara Ramos', role: 'Graphic Designer', picture: 'Barbara-Ramos-Graphic-Designer.jpg' },
 
 ];
 
-console.log(team[3].fullName);
-console.log(team[1]['role']);
+// console.log(team[3].fullName);
+// console.log(team[1]['role']);
+// console.log(team[2]['picture']);
+
+// Stampare in console tutte le informazioni per ogni membro del team.
+for (let i = 0; i < team.length; i++){
+    currentMember = team[i];
+    console.log(currentMember);
+}
+
+
+
