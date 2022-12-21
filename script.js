@@ -35,18 +35,12 @@ const team = [
 
 ];
 
-// console.log(team[3].fullName);
-// console.log(team[1]['role']);
-// console.log(team[2]['picture']);
-
 // Stampare in console tutte le informazioni per ogni membro del team.
 for (let i = 0; i < team.length; i++){
     currentMember = team[i];
     console.log(currentMember);
 
-    infoMembers.innerText += `Full-name: ${team[i].fullName}; 
-                              role: ${team[i].role};
-                              picture: ${team[i].picture};
+    infoMembers.innerText += `Full-name: ${team[i].fullName}; role: ${team[i].role}; picture: ${team[i].picture};
                               -------------------------
                               `; 
     

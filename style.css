@@ -5,6 +5,69 @@
     box-sizing: border-box;
 }
 
-body{
+/* Stampa stringhe in pagina via javascript */
+#info-members{
+    text-align: center;
+}
+
+
+/* Generics */
+.container{
+    width: 1400px;
+    min-height: 500px;
+    margin: 0 auto;
     background-color: whitesmoke;
+    /* border: 1px solid red; */
+}
+
+.container h1, p{
+    text-align: center;
+    padding: 1rem;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.container h1{
+    font-size: 40px;
+}
+
+.container p{
+    font-size: 25px;
+    line-height: 1.4;
+}
+
+/* Utils */
+.card img{
+    max-width: 100%;
+}
+
+.card h5{
+    font-size: 15px;
+    font-style: italic;
+}
+
+.card h3{
+    font-size: 20px;
+}
+
+/* card, stile e allineamento */
+.row{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.col{
+    flex-basis: calc(100% / 3);
+    min-height: 300px;
+    /* border: 1px dashed black; */
+
+    display: flex;
+    justify-content: center;
+}
+
+.card h3, h5{
+    text-align: center;
+    padding: 5px;
+    color: rgba(0, 0, 0, 0.5);
 }
