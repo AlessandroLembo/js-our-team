@@ -1,5 +1,3 @@
-console.log('JS OK');
-
 /*
 TRACCIA:
 
@@ -23,10 +21,7 @@ gradevole (potete usare lo screen in allegato come spunto).
 
 // Recupero gli elementi dalla pagina
 const infoMembers = document.getElementById('info-members');
-const topRow = document.getElementById('top-Row');
-const bottomRow = document.getElementById('bottom-Row');
-// const cardsElements = document.querySelectorAll('.card');
-// console.log(cardsElements);
+const row = document.getElementById('row');
 
 
 // Creare un array di oggetti con le informazioni fornite.
@@ -44,7 +39,7 @@ let printElement = '';
 // Stampare in console tutte le informazioni per ogni membro del team.
 for (let i = 0; i < team.length; i++){
     let currentMember = team[i];
-    console.log(currentMember);
+    console.table(currentMember);
 
     // infoMembers.innerText += `Full-name: ${team[i].fullName}; role: ${team[i].role}; picture: ${team[i].picture};
     //                           -------------------------
@@ -57,6 +52,28 @@ for (let i = 0; i < team.length; i++){
 
 infoMembers.innerText = printElement;
 
+
+// Creazione array con indirizzo immagini
+const sources = [
+    'img/wayne-barnett-founder-ceo.jpg', 
+    'img/angela-caroll-chief-editor.jpg',  
+    'img/walter-gordon-office-manager.jpg',  
+    'img/angela-lopez-social-media-manager.jpg',
+    'img/scott-estrada-developer.jpg',
+    'img/barbara-ramos-graphic-designer.jpg',
+      
+ ];
+
+let cards = '';
+
+for (let i = 0; i < sources.length; i++){
+   cards += `<div class="card">
+                <img src="${sources[i]}" alt="profile ${i}">
+                                   
+             </div>` ;
+}
+
+row.innerHTML = cards;
 
 
 
