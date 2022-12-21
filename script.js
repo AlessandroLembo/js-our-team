@@ -35,20 +35,23 @@ const team = [
 
 ];
 
+// Apertura ciclo for per caricare le informazioni nella variabile.
 let printElement = '';
-// Stampare in console tutte le informazioni per ogni membro del team.
+
 for (let i = 0; i < team.length; i++){
-    let currentMember = team[i];
-    console.table(currentMember);
+    // printElement = team[i];
+    // console.table(printElement);
 
     printElement += `Full-name: ${team[i].fullName}; 
                      role: ${team[i].role}; 
                      picture: ${team[i].picture};
                      -------------------------
-    `;                           
+                     `;                           
 }
 
+// Stampa in pagina informazioni dei membri del team
 infoMembers.innerText = printElement;
+console.table(printElement);
 
 
 // Creazione array con indirizzo immagini
@@ -62,7 +65,8 @@ const sources = [
       
  ];
 
-// Creazione delle cards 
+
+// Creazione delle cards con ciclo for
 let cards = '';
 
 for (let i = 0; i < sources.length; i++){
@@ -75,6 +79,7 @@ for (let i = 0; i < sources.length; i++){
              </div>` ;
 }
 
+// Stampa delle cards in pagina.
 row.innerHTML = cards;
 
 
