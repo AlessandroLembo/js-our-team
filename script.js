@@ -39,9 +39,7 @@ const team = [
 let printElement = '';
 
 for (let i = 0; i < team.length; i++){
-    // printElement = team[i];
-    // console.table(printElement);
-
+    
     printElement += `Full-name: ${team[i].fullName}; 
                      role: ${team[i].role}; 
                      picture: ${team[i].picture};
